@@ -1,0 +1,153 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: #4A4A4A;
+}
+.header-box ul li,.menu-box ul li{
+	list-style: none;
+}
+html,body,.main-box{
+	width: 100%;
+	height: 100%;
+}
+.header-box{
+	width: 100%;
+	height: 72px;
+	background: #121212;
+	box-sizing: border-box;
+	border-bottom: 2px solid #000000;
+	/* display: flex; */
+}
+.menu-content-box{
+	height: calc(100% - 72px);
+	width: 100%;
+	display: flex;
+}
+
+.sidebar-wrap{
+	width: 260px;
+	background: #121212;
+	overflow-y: auto;
+	position: static;
+	border-top: 1px solid #121212;
+}
+.sidebar{
+	width: 260px;
+	height: 100%;
+	background: #121212;
+}
+.content-box{
+	flex: 1;
+	height: 100%;
+	overflow-y: auto;
+}
+
+/* 因为header的样式相对比较简单，就没有单独独立出一个css，而是放在公共css文件中 */
+.header-box .logo-box{
+	width: 260px;
+	height: 100%;
+	padding: 0 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+}
+.header-box .logo-box img{
+	width: 100%;
+	cursor: pointer;
+}
+.header-box .nav-box{
+	flex: 1;
+	height: 100%;
+	display: flex;
+	float: left;
+    width: calc(100% - 370px);
+	overflow-x: auto;
+}
+.header-box .nav-box .nav-item{
+	display: none;
+	align-items: center;
+	height: 100%;
+	margin: 0 25px;
+	font-size: 16px;
+	color: #C0C0C0;
+	/* cursor: pointer; */
+	position: relative;
+}
+.header-box .nav-box .nav-item.active > a{
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.header-box .nav-box .nav-item.show{
+	display: flex;
+}
+.header-box .nav-box .nav-item>a{
+	color: #C0C0C0;
+	text-decoration: none;
+}
+.header-box .nav-box .nav-item:hover::after, .header-box .nav-box .nav-item.active::after{
+	position: absolute;
+	content: "";
+	display: inline-block;
+	left: 0;
+	right: 0;
+	bottom: 1px;
+	height: 3px;
+	background: #FFFFFF;
+}
+.d-none, .toc>ul{
+	display: block !important;
+}
+.lang-box{
+	position: relative;
+	width: 84px;
+	display: flex;
+	align-items: center;
+	margin-right: 26px;
+	float: right;
+	height: 100%;
+}
+.lang{
+	width: 100%;
+	text-align: center;
+	cursor: pointer;
+	color: #E7E7E7;
+	border-radius: 3px;
+	border: 1px solid #E7E7E7;
+	padding: 4px 5px;
+	display: inline-block;
+	font-size: 14px;
+}
+.lang:hover {
+	background: rgba(231, 231, 231, 0.2);
+}
+.lang-dropdown {
+	display: none;
+	position: absolute;
+	top: 58px;
+	z-index: 9999;
+	background-color: #ffffff;
+	border-radius: 4px;
+	width: 84px;
+	text-align: center;
+	color: #262626;
+}
+.lang-dropdown.show {
+	display: block;
+}
+.lang-dropdown-item {
+	padding: 10px 0;
+	cursor: pointer;
+}
+.lang-dropdown-item:not(:last-of-type) {
+	border-bottom: 1px solid #eeeeee;
+}
+.lang-dropdown-item:hover {
+	color: #557BFA;
+}
+.lang-dropdown-item.active {
+	color: #557BFA;
+}

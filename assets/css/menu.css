@@ -1,0 +1,209 @@
+.sidebar-wrap .sidebar .header, .sidebar-wrap .sidebar .toctree
+{
+	width: 260px;
+}
+.sidebar-wrap .sidebar
+{
+	width: 100% !important;
+}
+.menu-box{
+  overflow-x: hidden;
+	width: 100%;
+	overflow-y: auto;
+}
+.sidebar-wrap .header{
+	height: 80px;
+	width: 100% !important;
+	padding: 0;
+	background: #252321;
+	border-bottom: 1px solid #141418;
+}
+.sidebar-wrap .header .title{
+	padding: 0px 20px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	padding-bottom: 0 !important;
+}
+.sidebar-wrap .header .logo-box{
+	width: 100%;
+}
+
+.menu-box .toctree>ul li.toc a{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+
+.menu-box .toctree>.caption{
+	color: #FFFFFF;
+	font-size: 18px;
+	background: #121212;
+	padding-left: 20px !important;
+	height: 60px;
+	line-height: 60px;
+}
+.menu-box .toctree>ul>li{
+	background: #121212;
+}
+/* .menu-box .toctree>ul li.current{
+	background: #819CFF;
+} */
+.menu-box .toctree>ul li a{
+	font-size: 16px;
+	height: 56px;
+	line-height: 56px;
+	padding: 0;
+	color: #FFFFFF !important;
+	padding-left: 20px;
+}
+.menu-box .toctree>ul li a:hover{
+	color: #819CFF !important;
+}
+.menu-box .toctree>ul>li.current>a{
+	padding-left: 20px;
+	background: #121212;
+}
+.menu-box .toctree>ul>li>a:hover{
+	background: rgba(129, 156, 255, 0.15) !important;
+	color: #819CFF !important;
+}
+.menu-box .toctree>ul li .content-toc{
+	background: #121212;
+}
+.menu-box .toctree>ul li .content-toc li a{
+	padding-left: 40px;
+}
+.menu-box .toctree>ul li .content-toc li a:hover{
+	background: none;
+	color: #819CFF !important;
+}
+.menu-box .toctree>ul li a i{
+	display: none;
+}
+/* .menu-box .toctree>ul li.current>a,  */
+.menu-box  .toctree>ul .toc.current a.current{
+	background: rgba(129, 156, 255, 0.15) !important;
+	color: #819CFF !important;
+	border-top: none;
+	border-bottom: none;
+}
+.toc.level-2.current>a{
+	padding-left: 20px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.toctree>.menu-uls>.toc.current>.child-ul{
+	display: block !important;
+}
+.toctree>.menu-uls>.toc>.child-ul{
+	background: #121212;
+	display: none !important;
+}
+.child-ul li a{
+	width: 100%;
+    display: inline-block;
+}
+.child-ul li a.active{
+	background: #819CFF;
+	color: #fff !important;
+}
+.toctree>ul .toc.current>.child-ul li a:hover{
+	background: rgba(129, 156, 255, 0.15) !important;
+	color: #819CFF !important;
+}
+.toctree>ul .toc.current>.child-ul li a.active:hover{
+	background: #819CFF;
+	color: #fff !important;
+}
+.toctree>ul.menu-uls>.toc.current{
+	background: #121212;
+}
+.search{
+	padding: 12px 20px;
+	background-color: #121212;
+}
+.form-search{
+	border: 1px solid #555555;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	height: 36px;
+	width: 100%;
+}
+.search-img{
+	width: 14px;
+	margin-left: 14px;
+	margin-right: 8px;
+}
+.menu-box .search .input-block{
+	background: none;
+	box-shadow: none;
+	color: #FFFFFF;
+	border: none;
+	height: 36px;
+	font-size: 14px;
+	padding-left: 0;
+}
+.menu-box .search .input-block::-webkit-input-placeholder{
+  color: #999999;
+  font-size: 14px;
+}
+.menu-uls{
+	display: none;
+}
+.menu-box .toctree>.menu-uls.show{
+	display: block;
+}
+.menu-box .toctree>.menu-uls .child-ul>li>a{
+	color: #E7E7E7 !important;
+	padding-left: 40px;
+	font-size: 14px;
+	font-weight: 400;
+}
+.search-val-box{
+	width: 100%;
+	max-height: 300px;
+	overflow-y: auto;
+	display: none;
+}
+.child-a{
+	cursor: pointer;
+}
+
+.search-val-box{
+	background: #1D1D1E;
+	padding-top: 5px;
+	padding-bottom: 20px;
+}
+.search-val-box > li:not(.child-li) {
+	text-align: left !important;
+}
+.search-val-box .child-li{
+	
+	border-top: none !important;
+}
+.search-val-box .child-li a{
+	background: none;
+	color: #E7E7E7;
+	padding: 0 20px;
+	font-size: 12px;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.search-val-box .child-li a:hover{
+	background: none;
+	color: #819CFF;
+}
+.search-val-box .child-li a.active{
+	color: #819CFF;
+	text-decoration: underline;
+	
+}
